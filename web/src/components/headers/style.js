@@ -14,8 +14,18 @@ export const Icon = styled.a.attrs({
 `
 
 export const Nav = styled.div`
-    width:945px;
-    mix-width:500px;
+    @media screen and (max-width: 3600px){
+        min-width:945px;
+    }
+    @media screen and (max-width: 2000px){
+        min-width:945px;
+    }
+    @media screen and (max-width: 1400px){
+        min-width:605px;
+    }
+    @media screen and (max-width: 768px){
+        min-width:500px;
+    }
     height:100%;
     box-sizeing:border-box;
     float: left;
