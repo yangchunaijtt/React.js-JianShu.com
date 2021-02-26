@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import GlobStyle from './style.js';
+import Iconfont from "./static/iconfont"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -8,6 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
     <GlobStyle />
+    <Iconfont />
   </React.StrictMode>,
   document.getElementById('root')
 );
