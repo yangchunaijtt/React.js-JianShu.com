@@ -56,25 +56,107 @@ export const NavItem = styled.span`
 export const SearchWarpper = styled.div`
     float:left;
     position: relative;
-    margin:0 15px;
-    box-sizing: border-box;
+    top:0px;
+    left:0px;
+    .yu-enter {
+        width: 230px;
+        transition: all .3s ease-out;
+    }
+    .yu-enter-active {
+        width: 300px;    
+    }
+    .yu-exit {
+        transition: all .3s ease-out;
+    }
+    .yu-exit-active {
+        width: 230px;
+    }
+    &.searchWarp{
+        .searchIcon{
+            position: absolute;
+            right:0px;
+            bottom:8px;
+            width:40px;
+            height:40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 20px;
+            font-weight: 400!important;
+            color: #969696;
+           &.focuesd{
+               background-color:#969696;
+               color:#fff;
+           }
+        }
+    }
 `
 
 export const SearchItem = styled.input.attrs({
     placeholder: "搜索"
 })`
-    border-radius:40px;
-    width: 240px;
-    padding: 0 40px 0 20px;
+    width:230px;
     height: 38px;
-    font-size: 14px;
-    border: 1px solid #eee;
-    border-radius: 40px;
+    border: none;
+    outline: none;
+    border-radius: 19px;
+    margin-top: 9px;
+    padding :0 35px 0 20px;
+    box-sizing: border-box;
     background: #eee;
-    &:focus{
-        outline:none;
+    font-size: 14px;
+    margin-left: 20px;
+    color: #777;
+    outline:none;
+    &.searchWpfocuesd {
+        width: 300px;
     }
 `
+
+export const SearchInfo = styled.div`
+    position: absolute;
+    left: 0;
+    top: 56px;
+    width: 240px;
+    padding: 0 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+    background: #fff;
+`;
+export const SearchInfoTitle = styled.div`
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #969696;
+`;
+export const SearchInfoSwitch = styled.div`
+    float: right;
+    font-size: 12px;
+    cursor: pointer;
+    .spin {
+        display: block;
+        float: left;
+        font-size: 12px;
+        margin-right: 2px;
+        transition: all .3s ease-in;
+		transform-origin: center center;
+    }
+`;
+export const SearchInfoItem = styled.a`
+    float: left;
+    display: block;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #333;
+`;
+
+export const SearchInfoList = styled.div`
+    overflow: hidden;
+`;
 
 export const Addtion = styled.div`
     float:right;
