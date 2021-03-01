@@ -1,4 +1,8 @@
-.content{
-    padding-top:58px;
-    width:100%;
+.content {
+    width: 100%;
+    min-width: 768px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 58px 16px 50px 16px;
+    box-sizing: border-box;
 }

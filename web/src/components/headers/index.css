@@ -9,6 +9,7 @@
     height: 56px;
     margin-bottom: 20px;
     border: 1px solid transparent;
+    border-bottom: 1px solid #f2f2f2;
 }
 .header .width-limit {
     min-width: 768px;
